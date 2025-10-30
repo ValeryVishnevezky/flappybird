@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="img/flappy-bird.png" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>FlappyBird</title>
+	</head>
+	<body>
+		<section class="game-container">
+			<img class="flappy-bg" src="img/flappy-bird-bg.jpg" alt="flappy bird bg" />
+
+			<section class="game">
+				<div class="start-page">
+					<div class="logo">
+						<img class="flappy-logo" src="img/Flappy_Bird_logo1.png" alt="flappy bird" />
+						<img class="flappy-bird" src="img/flappy-bird.png" alt="flappy bird" />
+					</div>
+
+					<button class="start-button" onclick="onInit()">
+						<img src="/img/start.png" alt="" />
+					</button>
+				</div>
+
+				<div class="game-action hidden" onclick="onGameAreaClick(event)"></div>
+
+				<h1>Made by Valery</h1>
+			</section>
+		</section>
+
+		<script src="js/service.js"></script>
+		<script src="js/controller.js"></script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+.start-page {
+	display: grid;
+	grid-template-rows: 2fr 1fr 1fr;
+	place-items: center;
+	align-items: end;
+	height: 100%;
+}
+
+.logo {
+	place-self: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	animation: shake 1s linear infinite;
+}
+
+.flappy-logo {
+	width: 300px;
+}
+
+.flappy-bird {
+	position: absolute;
+	bottom: -10px;
+	right: -80px;
+	width: 100px;
+}
+
+.start-button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.start-button img {
+	width: 150px;
+	transition: scale 0.1s ease-in-out;
+}
+
+.start-button:active img {
+	transform: translateY(2px);
+}
+
+@keyframes shake {
+	50% {
+		transform: translateY(15px);
+	}
+}

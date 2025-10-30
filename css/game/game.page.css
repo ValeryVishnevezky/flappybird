@@ -1,0 +1,28 @@
+.game-action {
+	height: 100%;
+	user-select: none;
+	-webkit-user-select: none;
+	cursor: pointer;
+}
+
+.game-bird {
+	position: absolute;
+	bottom: 50%;
+	transform: translateY(-50%);
+	width: 90px;
+	margin-left: 150px;
+	transition: bottom 0.1s linear;
+}
+
+.fall {
+	animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(-40deg);
+	}
+	100% {
+		transform: rotate(60deg);
+	}
+}
