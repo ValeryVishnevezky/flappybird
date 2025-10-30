@@ -1,17 +1,38 @@
 .game-action {
+	position: relative;
 	height: 100%;
 	user-select: none;
 	-webkit-user-select: none;
 	cursor: pointer;
+	overflow: hidden;
 }
 
-.game-bird {
+.bird {
 	position: absolute;
-	bottom: 50%;
-	transform: translateY(-50%);
+	bottom: 500px;
+	right: 450px;
 	width: 90px;
-	margin-left: 150px;
 	transition: bottom 0.1s linear;
+	z-index: 4;
+	/* outline: 1px solid red; */
+}
+
+.pipe-top {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 80px;
+	height: 200px;
+	background-color: green;
+}
+
+.pipe-bottom {
+	position: absolute;
+	bottom: 130px;
+	right: 0px;
+	width: 80px;
+	height: 200px;
+	background-color: green;
 }
 
 .fall {
