@@ -1,38 +1,69 @@
 .game-action {
 	position: relative;
-	height: 100%;
+	height: calc(100% - 13%);
 	user-select: none;
 	-webkit-user-select: none;
 	cursor: pointer;
 	overflow: hidden;
+	border-bottom: 5px solid #1a1a1a;
 }
 
 .bird {
 	position: absolute;
-	bottom: 500px;
-	right: 450px;
-	width: 90px;
+	/* bottom: 500px; */
+	bottom: 50%;
+	right: min(63vw, 450px);
+	width: 11vw;
+	max-width: 80px;
 	transition: bottom 0.1s linear;
 	z-index: 4;
 	/* outline: 1px solid red; */
 }
 
-.pipe-top {
+.pipe {
 	position: absolute;
-	top: 0;
-	right: 0px;
-	width: 80px;
+	width: 19vw;
+	max-width: 128px;
 	height: 200px;
-	background-color: green;
+	background: linear-gradient(
+		to right,
+		#2ecc40 0%,
+		#27ae60 25%,
+		#1e8449 75%,
+		#145a32 100%
+	);
+	border: 5px solid #1a1a1a;
+	border-bottom: none;
+	border-top: none;
+}
+
+.pipe::before {
+	content: '';
+	position: absolute;
+	left: max(-18%, -15px);
+	top: 0;
+	width: min(120%, 140px);
+	height: 50px;
+	background: linear-gradient(
+		to right,
+		#2ecc40 0%,
+		#27ae60 25%,
+		#1e8449 75%,
+		#145a32 100%
+	);
+	border: 5px solid #1a1a1a;
+	/* border-radius: 3px 3px 0 0; */
+}
+
+.pipe-top {
+	top: 0;
+	right: 40px;
+	transform: rotate(180deg);
 }
 
 .pipe-bottom {
-	position: absolute;
-	bottom: 130px;
-	right: 0px;
-	width: 80px;
-	height: 200px;
-	background-color: green;
+	bottom: 0;
+	right: 40px;
 }
 
 .fall {

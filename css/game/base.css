@@ -7,7 +7,7 @@
 html {
 	font-family: pixel, sans-serif;
 	letter-spacing: 2px;
-	font-size: 20px;
+	font-size: 16px;
 	color: white;
 	background: #000;
 	overflow: hidden;
@@ -48,6 +48,8 @@ body {
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
+	white-space: nowrap;
+	font-size: min(7vw, 2.5rem);
 }
 
 .hidden{

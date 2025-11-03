@@ -20,8 +20,8 @@ function renderStart() {
 function renderGame() {
 	let strHTML = `
 		<img class="bird" src="img/flappy-bird.png" alt="flappy bird" />
-			<div class="pipe-top"></div>
-			<div class="pipe-bottom"></div>
+			<div class="pipe pipe-top"></div>
+			<div class="pipe pipe-bottom"></div>
 	`
 	document.querySelector('.start-page').classList.add('hidden')
 	let game = document.querySelector('.game-action')
@@ -37,7 +37,7 @@ function onGameAreaClick() {
 	gameBird.classList.remove('fall')
 	gameBird.style.transform = 'rotate(-40deg)'
 
-	gBirdHeight += 150
+	gBirdHeight += 180
 	console.log('gBirdHeight', gBirdHeight)
 	gameBird.style.bottom = gBirdHeight + 'px'
 
@@ -46,16 +46,16 @@ function onGameAreaClick() {
 	}, 300)
 
 	gGameInterval = setInterval(() => {
-		gBirdHeight -= 3
+		gBirdHeight -= 5
 		gameBird.style.bottom = gBirdHeight + 'px'
 
-		if (checkGameOver(document.querySelectorAll('.pipe-top, .pipe-bottom'))) return	
-		if (gBirdHeight <= 120) {
-			isGameOn = false
-			clearInterval(gGameInterval)
-			clearInterval(gPipeInterval)
-			clearInterval(gPipeMoveInterval)
-		}
+		// if (checkGameOver(document.querySelectorAll('.pipe-top, .pipe-bottom'))) return	
+		// if (gBirdHeight <= 120) {
+		// 	isGameOn = false
+		// 	clearInterval(gGameInterval)
+		// 	clearInterval(gPipeInterval)
+		// 	clearInterval(gPipeMoveInterval)
+		// }
 	}, 16)
 }
 
@@ -82,7 +82,7 @@ function startPipeMovement() {
 			pipe.style.right = gPipeRight + 'px'
 		})
 
-		if (checkGameOver(pipes)) return
+		// if (checkGameOver(pipes)) return
 
 		if (gPipeRight >= 710) {
 			gPipeRight = 0
