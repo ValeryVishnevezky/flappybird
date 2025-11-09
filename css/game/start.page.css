@@ -12,21 +12,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px 20px;
 	animation: shake 1s linear infinite;
 }
 
 .flappy-logo {
-	width: 40vw;
-	max-width: 300px;
+	/* width: min(45vmin, 300px); */
+	width: 35vmin;
 }
 
 .flappy-bird {
 	position: absolute;
-	bottom: max(-.5vw, -10px);
-	right: max(-7vw, -60px);
-	width: 13vw;
-	max-width: 90px;
+	bottom: clamp(-20px, -3vmin, -4px);
+	right: clamp(-80px, -10vmin, -5px);
+	/* width: min(13vmin, 90px); */
+	width: 8vmin;
 }
 
 .start-button {
@@ -36,8 +35,8 @@
 }
 
 .start-button img {
-	width: 25vw;
-	max-width: 150px;
+	/* width: min(25vmin, 150px); */
+	width: 15vmin;
 	transition: scale 0.1s ease-in-out;
 }
 

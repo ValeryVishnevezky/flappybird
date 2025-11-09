@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -23,18 +25,16 @@ body {
 
 .game-container {
 	position: relative;
-	display: inline-block;
-	max-width: 710px;
 	width: 100%;
 	margin: 0 auto;
+	width: min(100vw, calc(100vh * (365 / 510)));
 }
 
 .flappy-bg {
 	display: block;
 	width: 100%;
 	height: auto;
-	max-width: 710px;
-	/* aspect-ratio: 365 / 510; */
+	max-height: 100vh;
 }
 
 .game {
@@ -49,7 +49,7 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 	white-space: nowrap;
-	font-size: min(7vw, 2.5rem);
+	font-size: 5vmin;
 }
 
 .hidden{

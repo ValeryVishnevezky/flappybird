@@ -10,7 +10,7 @@ function onInit() {
 	gBirdHeight = 500
 	gPipeRight = 0
 	isGameOn = true
-	setPipeHeight()
+	// setPipeHeight()
 }
 
 function renderStart() {
@@ -50,12 +50,12 @@ function onGameAreaClick() {
 		gameBird.style.bottom = gBirdHeight + 'px'
 
 		// if (checkGameOver(document.querySelectorAll('.pipe-top, .pipe-bottom'))) return	
-		// if (gBirdHeight <= 120) {
+		if (gBirdHeight === 0) {
 		// 	isGameOn = false
-		// 	clearInterval(gGameInterval)
+			clearInterval(gGameInterval)
 		// 	clearInterval(gPipeInterval)
 		// 	clearInterval(gPipeMoveInterval)
-		// }
+		}
 	}, 16)
 }
 

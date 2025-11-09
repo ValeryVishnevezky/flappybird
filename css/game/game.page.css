@@ -10,11 +10,10 @@
 
 .bird {
 	position: absolute;
-	/* bottom: 500px; */
-	bottom: 50%;
-	right: min(63vw, 450px);
-	width: 11vw;
-	max-width: 80px;
+	bottom: 45%;
+	right: 60%;
+	/* width: min(11vmin, 90px); */
+	width: 9vmin;
 	transition: bottom 0.1s linear;
 	z-index: 4;
 	/* outline: 1px solid red; */
@@ -22,40 +21,16 @@
 
 .pipe {
 	position: absolute;
-	width: 19vw;
-	max-width: 128px;
-	height: 200px;
-	background: linear-gradient(
-		to right,
-		#2ecc40 0%,
-		#27ae60 25%,
-		#1e8449 75%,
-		#145a32 100%
-	);
-	border: 5px solid #1a1a1a;
-	border-bottom: none;
-	border-top: none;
-}
-
-.pipe::before {
-	content: '';
-	position: absolute;
-	left: max(-18%, -15px);
-	top: 0;
-	width: min(120%, 140px);
-	height: 50px;
-	background: linear-gradient(
-		to right,
-		#2ecc40 0%,
-		#27ae60 25%,
-		#1e8449 75%,
-		#145a32 100%
-	);
-	border: 5px solid #1a1a1a;
-	/* border-radius: 3px 3px 0 0; */
+	/* width: min(20vmin, 160px); */
+	width: 20vmin;
+	height: 30%;
+	border-left: .9vmin solid #1a1a1a;
+	border-right: .9vmin solid #1a1a1a;
+	background: linear-gradient(to right, #00a72a 0%, #00a72a 15%, #59f780 15%, #59f780 20%, #00a72a 20%, #00a72a 25%, #00ff55 25%, #00ff55 65%, #59f780 65%, #59f780 70%, #00ff55 70%, #00ff55 75%, #59f780 75%, #59f780 90%, #9fff51 90%, #9fff51 95%, #59f780 95%, #59f780 100%);
 }
 
 .pipe-top {
+	background: linear-gradient(to left, #00a72a 0%, #00a72a 15%, #59f780 15%, #59f780 20%, #00a72a 20%, #00a72a 25%, #00ff55 25%, #00ff55 65%, #59f780 65%, #59f780 70%, #00ff55 70%, #00ff55 75%, #59f780 75%, #59f780 90%, #9fff51 90%, #9fff51 95%, #59f780 95%, #59f780 100%);
 	top: 0;
 	right: 40px;
 	transform: rotate(180deg);
@@ -64,6 +39,24 @@
 .pipe-bottom {
 	bottom: 0;
 	right: 40px;
+}
+
+.pipe::before {
+	content: '';
+	position: absolute;
+	left: -10%;
+	top: 0;
+	width: 120%;
+	height: 35%;
+	background: linear-gradient(to right, #00a72a 0%, #00a72a 15%, #59f780 15%, #59f780 20%, #00a72a 20%, #00a72a 25%, #00ff55 25%, #00ff55 65%, #59f780 65%, #59f780 70%, #00ff55 70%, #00ff55 75%, #59f780 75%, #59f780 90%, #9fff51 90%, #9fff51 95%, #59f780 95%, #59f780 100%);
+	box-shadow: inset 5px -4px 0 5px #00a72a;
+	border: .9vmin solid #1a1a1a;
+	/* border-width: 1vmin; */
+}
+
+.pipe-top::before {
+	background: linear-gradient(to left, #00a72a 0%, #00a72a 15%, #59f780 15%, #59f780 20%, #00a72a 20%, #00a72a 25%, #00ff55 25%, #00ff55 65%, #59f780 65%, #59f780 70%, #00ff55 70%, #00ff55 75%, #59f780 75%, #59f780 90%, #9fff51 90%, #9fff51 95%, #59f780 95%, #59f780 100%);
+	box-shadow: inset -5px -4px 0 5px #00a72a;
 }
 
 .fall {
