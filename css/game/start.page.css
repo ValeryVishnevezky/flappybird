@@ -16,16 +16,16 @@
 }
 
 .flappy-logo {
-	/* width: min(45vmin, 300px); */
-	width: 35vmin;
+	width: min(45vmin, 300px);
+	/* width: 35vmin; */
 }
 
 .flappy-bird {
 	position: absolute;
 	bottom: clamp(-20px, -3vmin, -4px);
 	right: clamp(-80px, -10vmin, -5px);
-	/* width: min(13vmin, 90px); */
-	width: 8vmin;
+	width: min(13vmin, 90px);
+	/* width: 8vmin; */
 }
 
 .start-button {
@@ -35,8 +35,8 @@
 }
 
 .start-button img {
-	/* width: min(25vmin, 150px); */
-	width: 15vmin;
+	width: min(25vmin, 150px);
+	/* width: 15vmin; */
 	transition: scale 0.1s ease-in-out;
 }
 

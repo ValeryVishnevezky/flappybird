@@ -12,8 +12,8 @@
 	position: absolute;
 	bottom: 45%;
 	right: 60%;
-	/* width: min(11vmin, 90px); */
-	width: 9vmin;
+	width: min(11vmin, 90px);
+	/* width: 9vmin; */
 	transition: bottom 0.1s linear;
 	z-index: 4;
 	/* outline: 1px solid red; */
@@ -21,11 +21,11 @@
 
 .pipe {
 	position: absolute;
-	/* width: min(20vmin, 160px); */
-	width: 20vmin;
+	width: min(20vmin, 160px);
+	/* width: 20vmin; */
 	height: 30%;
-	border-left: .9vmin solid #1a1a1a;
-	border-right: .9vmin solid #1a1a1a;
+	border-left: .7vmin solid #1a1a1a;
+	border-right: .7vmin solid #1a1a1a;
 	background: linear-gradient(to right, #00a72a 0%, #00a72a 15%, #59f780 15%, #59f780 20%, #00a72a 20%, #00a72a 25%, #00ff55 25%, #00ff55 65%, #59f780 65%, #59f780 70%, #00ff55 70%, #00ff55 75%, #59f780 75%, #59f780 90%, #9fff51 90%, #9fff51 95%, #59f780 95%, #59f780 100%);
 }
 
@@ -50,7 +50,7 @@
 	height: 35%;
 	background: linear-gradient(to right, #00a72a 0%, #00a72a 15%, #59f780 15%, #59f780 20%, #00a72a 20%, #00a72a 25%, #00ff55 25%, #00ff55 65%, #59f780 65%, #59f780 70%, #00ff55 70%, #00ff55 75%, #59f780 75%, #59f780 90%, #9fff51 90%, #9fff51 95%, #59f780 95%, #59f780 100%);
 	box-shadow: inset 5px -4px 0 5px #00a72a;
-	border: .9vmin solid #1a1a1a;
+	border: .7vmin solid #1a1a1a;
 	/* border-width: 1vmin; */
 }
 
