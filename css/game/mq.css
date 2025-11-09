@@ -1,0 +1,5 @@
+@media (width < 700) {
+	.game-container {
+		width: min(100vw, calc(100vh * (9 / 16)));
+	}
+}
